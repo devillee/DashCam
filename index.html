@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="description" content="Dash Cam">
+  <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1, maximum-scale=1">
+  <meta itemprop="description" content="Dash Cam">
+  <meta itemprop="name" content="Dash Cam">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta id="theme-color" name="theme-color" content="#ffffff">
+
+  <base target="_blank">
+
+  <title>Dash Cam Live
+  </title>
+
+  <link rel="stylesheet" href="./css/style.css" />
+
+</head>
+
+<body>
+  <div class="all">
+    <video id="remoteVideo" playsinline autoplay muted></video>
+  </div>
+
+  <div class="all">
+    <label>远程ID</label>
+    <input type="text" id="id_remote_uuid" class="input" style="width: 500px;">
+    <button id="connect" disabled>连接</button>
+    <a href="https://ffcmd.com/file/app-release.apk">下载APK</a>
+  </div>
+
+
+  <script src="./js/WebSocketClient.js"></script>
+  <script src="./js/WebrtcClient.js"></script>
+  <script src="./js/Logic.js"></script>
+
+</body>
+
+</html>
